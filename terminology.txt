@@ -36,6 +36,13 @@ achieved, SOME/IP messages including the SOME/IP header shall not exceed 4095
 Bytes.
 
 
+Endianess:-
+All RPC-Headers shall be encoded in network byte order (big
+endian) [RFC 791]. The byte order of the parameters inside the payload shall be defined by the interface definition (i.e. FIBEX or ARXML) and shall be in network byte
+order when possible and if no other byte order is specified.
+This means that Length and Type fields shall be always in
+network byte order. 
+
 -------------------------------------------------------
 
 General
