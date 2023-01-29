@@ -1,3 +1,13 @@
 pduR
 
 PduR stands for Protocol Data Unit Router in the Service-Oriented Middleware over IP (SOME/IP) protocol. PduR is responsible for routing SOME/IP protocol data units (PDUs) between different service instances and clients in the system. It is responsible for managing the routing tables, managing the connection state, and handling the flow control of the PDUs. PduR also provides a mechanism for handling service discovery and service binding, which enables clients to find and connect to the appropriate service instances.
+
+SOME/IP Transport Protocol (TP) modul
+
+The SOME/IP Transport Protocol (TP) module is a component within the SOME/IP protocol stack that is responsible for the reliable and efficient transport of PDUs (Protocol Data Units) over the network. It provides a number of features such as error correction, flow control, and message segmentation/reassembly.
+
+The SOME/IP TP module is based on the ISO-OSI Transport Layer (layer 4) and it is responsible for ensuring that the PDUs are delivered to their intended destination in a reliable and efficient manner. It uses the User Datagram Protocol (UDP) as the underlying transport protocol, which allows for low overhead and high throughput, making it well suited for use in automotive systems.
+
+The SOME/IP TP module also provides mechanisms for flow control, which allows for the efficient use of network resources and prevents overloading of the system. It also provides error correction mechanisms such as retransmission of lost or corrupted PDUs, to ensure the integrity of the data being transmitted.
+
+Overall, the SOME/IP TP module plays an important role in the overall functionality of the SOME/IP protocol by ensuring that PDUs are delivered reliably and efficiently over the network, thus enabling the communication between service instances and clients.
