@@ -20,3 +20,14 @@ IP segments. Every payload of these segments carries at most 1392 bytes in this
 example.
 JUSTIFICATION:
 The maximum size of a SOME/IP message can vary depending on the implementation and the underlying transport protocol. In general, the maximum size of a SOME/IP message should not exceed the maximum transmission unit (MTU) of the underlying network, which is typically around 1500 bytes for Ethernet networks. However, this can be larger or smaller depending on the specific implementation and network configuration.
+
+
+-------------------------------------------------------
+
+General
+SOME/IP-SD is used to
+• Locate service instances.
+• Detect if service instances are running.
+• Implement the Publish/Subscribe handling.
+Inside the vehicular network service instance locations are commonly known; therefore, the state of the service instance is of primary concern. The location of the service
+(i.e. IP-Address, transport protocol, and port number) are of secondary concern.
