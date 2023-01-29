@@ -22,6 +22,20 @@ JUSTIFICATION:
 The maximum size of a SOME/IP message can vary depending on the implementation and the underlying transport protocol. In general, the maximum size of a SOME/IP message should not exceed the maximum transmission unit (MTU) of the underlying network, which is typically around 1500 bytes for Ethernet networks. However, this can be larger or smaller depending on the specific implementation and network configuration.
 
 
+Message Length Limitations:-
+In combination with regular Ethernet, IPv4 and UDP can transport packets with up to 1472 Bytes of data without fragmentation, while IPv6 uses additional 20 Bytes. Especially for small systems fragmentation shall be avoided, so the
+SOME/IP header and payload shall be of limited length. The possible usage of security
+protocols further limits the maximal size of SOME/IP messages.
+When using UDP as transport protocol SOME/IP messages
+shall use up to 1416 Bytes for the SOME/IP header and payload, so that 1400 Bytes
+are available for the payload.
+The usage of TCP allows for larger streams of data to transport SOME/IP header
+and payload. However, current transport protocols for CAN and FlexRay as well as
+AUTOSAR limit messages to 4095 Bytes. When compatibility to those has to be
+achieved, SOME/IP messages including the SOME/IP header shall not exceed 4095
+Bytes.
+
+
 -------------------------------------------------------
 
 General
