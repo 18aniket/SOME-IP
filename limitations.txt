@@ -1,0 +1,1 @@
+1.It does not implement retry mechanism nor does it reordering of received SOME/IP segments.
