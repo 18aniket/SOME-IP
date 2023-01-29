@@ -1,0 +1,3 @@
+pduR
+
+PduR stands for Protocol Data Unit Router in the Service-Oriented Middleware over IP (SOME/IP) protocol. PduR is responsible for routing SOME/IP protocol data units (PDUs) between different service instances and clients in the system. It is responsible for managing the routing tables, managing the connection state, and handling the flow control of the PDUs. PduR also provides a mechanism for handling service discovery and service binding, which enables clients to find and connect to the appropriate service instances.
