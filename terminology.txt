@@ -48,5 +48,13 @@ For the control path (SOME/IP-SD), the Service Discovery Module implements
 SOME/IP-SD including the SOME/IP headers without the Message-ID and Length field
 itself.
 
+Please be aware that not all parts of SOME/IP are implemented in AUTOSAR.
+Some parts of SOME/IP are implemented in [2, SWS SOME/IP Transformer], [3, SWS
+Socket Adaptor] and [4, SWS Service Discovery].
+Other functionality is currently not supported by AUTOSAR. Among others, the following functionality is not implemented in AUTOSAR:
+• Exceptions and exception-specific error data structures
+• Structs with variable length
+• Tunneling of SOME/IP messages through CAN and FlexRay leads to SOME/IP
+messages without parts of the header inserted by [3, SWS Socket Adaptor]
 
 
