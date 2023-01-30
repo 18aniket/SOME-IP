@@ -78,4 +78,15 @@ Other functionality is currently not supported by AUTOSAR. Among others, the fol
 • Tunneling of SOME/IP messages through CAN and FlexRay leads to SOME/IP
 messages without parts of the header inserted by [3, SWS Socket Adaptor]
 
+--------------------------------------------------------------------------------------------
+
+Message ID [32 Bit]
+The Message ID shall be a 32 Bit identifier that is used to
+identify
+• the RPC call to a method of an application
+• or to identify an event.
+
+The assignment of the Message ID is up to the user / system designer. However,
+the Message ID is assumed be unique for the whole system (i.e. the vehicle)
+
 
