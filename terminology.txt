@@ -87,6 +87,11 @@ identify
 • or to identify an event.
 
 The assignment of the Message ID is up to the user / system designer. However,
-the Message ID is assumed be unique for the whole system (i.e. the vehicle)
+the Message ID is assumed be unique for the whole system (i.e. the vehicle).
+
+---------------------------------------------------------------------------------------------
+
+To construct the payload of a request message, all input or
+inout arguments of the method shall be serialized according to the order of the arguments within the signature of the method.
 
 
