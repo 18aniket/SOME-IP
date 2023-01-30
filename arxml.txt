@@ -26,3 +26,37 @@
 In this example, there is a single software component called "ExampleComp" that has a single input signal named "InSignal". The input signal is defined using a signal type called "ExampleSignalType", which is based on the base type "BOOLEAN".
 
 The ARXML file contains elements such as COMPOSITION-TYPE and SIGNAL-TYPE, which are used to describe the structure and data of the software component. The PORT-PROTOTYPES element defines the input and output signals of the component, while the ELEMENTS element is used to define the signal types and composition types used by the component.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+AR-PACKAGE: Represents a functional or technical unit of an ECU, such as a software component or a hardware module.
+
+AR-COMPONENT: Defines the functionality and behavior of a software component, including input and output ports and communication interfaces.
+
+AR-PORT: Defines an interface that allows communication between software components, such as input and output ports.
+
+AR-SW-COMPONENT-PROTOTYPE: Defines a blueprint for a software component, including its properties and interfaces.
+
+AR-COM-MODULE: Defines the communication behavior of a software component, including message transmission and reception.
+
+AR-BSWM-MODULE: Defines the behavior of the basic software (BSW) module, which provides basic functions for the ECU.
+
+AR-ECUC-MODULE: Defines the configuration of the ECU, including its parameters and settings.
+
+AR-RTE: Defines the run-time environment of the ECU, including software components and communication interfaces.
+
+AR-SW-MODULE-DESCRIPTION: Defines the properties of a software component, including its type, version, and dependencies.
+
+AR-COM-SIGNAL: Defines a communication signal that is transmitted between software components.
+
+AR-COM-SIGNAL-GROUP: Defines a group of communication signals that are transmitted together.
+
+AR-COM-SIGNAL-I-PDU: Defines a communication message that contains one or more communication signals.
+
+AR-COM-PROVIDED-API: Defines the API provided by a software component to other components.
+
+AR-COM-REQUIRED-API: Defines the API required by a software component from other components.
+
+AR-BSWM-SWC-TRIGGERING-DESCRIPTION: Defines the triggering of basic software (BSW) modules by software components.
+
+AR-SWC-IMPLEMENTATION: Defines the implementation of a software component, including its source code and object code.
