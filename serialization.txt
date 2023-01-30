@@ -1,2 +1,21 @@
 The serialization is based on the parameter list defined by the
 interface specification. 
+
+The interface specification defines the exact position of all
+parameters in the PDU and has to consider the memory alignment. The serialization
+shall not try to automatically align parameters but shall be aligned as specified in the
+interface specification.
+
+Type       Description      Size [bit]    Remark
+
+boolean    TRUE/FALSE value   8         FALSE (0), TRUE (1)
+uint8      unsigned Integer   8
+uint16     unsigned Integer   16
+uint32     unsigned Integer   32
+sint8      signed Integer     8
+sint16     signed Integer     16
+sint32     signed Integer     32
+float32    floating point number 32 IEEE 754 binary32 (Single
+Precision)
+float64   floating point number 64 IEEE 754 binary64 (Double
+Precision)
