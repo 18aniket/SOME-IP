@@ -19,3 +19,6 @@ float32    floating point number 32 IEEE 754 binary32 (Single
 Precision)
 float64   floating point number 64 IEEE 754 binary64 (Double
 Precision)
+
+The Byte Order is specified for each parameter by the interface
+definition. 
