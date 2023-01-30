@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ExampleComp</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-TYPE>
+          <SHORT-NAME>ExampleCompType</SHORT-NAME>
+          <PORT-PROTOTYPES>
+            <IN-PORT-PROTOTYPE>
+              <SHORT-NAME>InSignal</SHORT-NAME>
+              <TYPE-TREF DEST="SIGNAL-TYPE">ExampleSignalType</TYPE-TREF>
+            </IN-PORT-PROTOTYPE>
+          </PORT-PROTOTYPES>
+        </COMPOSITION-TYPE>
+        <SIGNAL-TYPE>
+          <SHORT-NAME>ExampleSignalType</SHORT-NAME>
+          <BASE-TYPE-REF DEST="BOOLEAN"/>
+        </SIGNAL-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
+
+In this example, there is a single software component called "ExampleComp" that has a single input signal named "InSignal". The input signal is defined using a signal type called "ExampleSignalType", which is based on the base type "BOOLEAN".
+
+The ARXML file contains elements such as COMPOSITION-TYPE and SIGNAL-TYPE, which are used to describe the structure and data of the software component. The PORT-PROTOTYPES element defines the input and output signals of the component, while the ELEMENTS element is used to define the signal types and composition types used by the component.
