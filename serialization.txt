@@ -1,0 +1,2 @@
+The serialization is based on the parameter list defined by the
+interface specification. 
